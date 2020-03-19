@@ -1,0 +1,204 @@
+.header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	&__box {
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 0px 0px 0px;
+	}
+	&__logo {
+		flex: 1 0 auto;
+	}
+	&__menu {
+		flex: 1 0 auto;
+	}
+	&__icons {
+		@include flexbox();
+		align-items: center;
+		flex: 0 0 auto;
+		a {
+			img {
+				margin: 0px 28px 0px 0px;
+			}
+		}
+	}
+}
+
+.search {
+	&:hover &__inp {
+		width: 80px;
+	}
+	&__form {
+		@include flexbox();
+		align-items: center;
+		&:hover {
+			padding: 5px 5px 5px 15px;
+			background: #c7b299;
+			border-radius: 30px;
+		}
+	}
+	&__inp {
+		width: 0;
+		@include anim(1s, 0s);
+		background: transparent;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+	&__btt {
+		background: transparent;
+	}
+}
+
+.menu {
+	margin: 0px -140px 0px 0px;
+	&__list {
+		@include flexbox();
+	}
+	&__item {
+		margin: 0px 0px 0px 27px;
+		// &:first-child {
+		// 	margin: 0px;
+		// }
+		a {
+			color: #ffffff;
+			font-weight: 300;
+			&:hover {
+				color: #c7b299;
+			}
+		}
+	}
+}
+
+@media (max-width:$md1+px){
+	.header {
+		&__box {
+			position: relative;
+		}
+		&__logo {
+			z-index: 2;
+		}
+		&__menu {}
+		&__icons {}
+		&__burger {
+			width: 40px;
+			height: 30px;
+			z-index: 2;
+			position: fixed;
+			top: 55px;
+			right: 20px;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: #fff;
+				@include anim (1s, 0s);
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: #fff;
+				@include anim (1s, 0s);
+			}
+			span {
+				position: absolute;
+				bottom: 13px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: #fff;
+			}
+		}
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: -2000px;
+		background: #1c2028;
+		@include flexbox();
+		justify-content: center;
+		align-items: flex-start;
+		overflow: auto;
+		@include anim (1s, 0s);
+		&__list {
+			flex-direction: column;
+		}
+		&__item {
+			margin: 0px 0px 30px 60px;
+			&:first-child {
+				margin: 120px 0px 30px 60px;
+			}
+			a {
+				font-size: 35px;
+			}
+			&:before {
+				content: ".";
+				font-size: 30px;
+				color: #fff;
+				position: relative;
+				bottom: 11px;
+			}
+		}
+	}
+	.search {
+		margin: 0px 75px 0px 0px;
+		&__form {}
+		&__inp {}
+		&__btt {}
+	}
+
+}
+
+@media (max-width: 470px) {
+	.header {
+		&__box {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__logo {
+		}
+		&__menu {}
+		&__icons {
+			margin: 30px 0px 0px 10px;
+		}
+		&__burger {}
+	}
+	.menu {
+		&__list {}
+		&__item {}
+	}
+	.search {
+		&__form {}
+		&__inp {}
+		&__btt {}
+	}
+
+}
+
+.activemenu {
+	top: 0;
+}
+.activeburger {
+	&:before {
+		transform: rotate(-45deg);
+		top: 13px;
+	}
+	&:after {
+		transform: rotate(45deg);
+		bottom: 13px;
+	}
+	span {
+		display: none;
+	}
+}

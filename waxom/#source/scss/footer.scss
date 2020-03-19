@@ -1,0 +1,305 @@
+.footer {
+	hr {
+		background-color: #252525;
+		height: 1px;
+		margin: 20px 0px;
+	}
+	&__txt {
+		color: #555555;
+		font-weight: 300;
+		line-height: 24px;
+		margin: 5px 0px 0px 0px;
+		&:hover {
+			color: #c7b299;
+		}
+	}
+	&__title {
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0px 0px 30px 0px;
+	}
+	&__time {
+		color: #363636;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 20px;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+	&__top {
+		background: #191919;
+		a {
+			color: #00bff3;
+		}
+		span {
+			color: #959595;
+		}
+	}
+	&__box {
+		@include flexbox ();
+		//justify-content: space-between;
+		padding: 80px 0px;
+	}
+	&__columnLef {
+		flex: 0 0 50%;
+		@include flexbox ();
+	}
+	&__columnRigh {
+		flex: 0 0 50%;
+		@include flexbox ();
+	}
+	&__col1 {
+		flex: 0 0 50%;
+		max-width: 271px;
+		margin: 0px 5px;
+		p{
+			margin: 30px 0px;
+		}
+		a {
+			color: #d1d1d1;
+			line-height: 20px;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-left: 5px solid  #d1d1d1;
+				right: -15px;
+				top: 7px;
+
+			} 
+		}
+	}
+	&__col2 {
+		flex: 0 0 50%;
+		max-width: 271px;
+		margin: 0px 5px;
+	}
+	&__col3 {
+		flex: 0 0 50%;
+		max-width: 271px;
+		margin: 0px 5px;
+	}
+	&__col4 {
+		flex: 0 0 50%;
+		max-width: 291px;
+		text-align: center;
+		margin: 0px 5px;
+		img {
+			display: inline-block;
+			margin: 5px;
+		}
+		p {
+			text-align: left;
+		}
+	}
+	&__bott {
+		background: #111111;
+		padding: 45px 0px 52px 0px;
+	}
+	&__boxbott {
+		@include flexbox ();
+		justify-content: space-between;
+	}
+	&__left {
+		@include flexbox ();
+		justify-content: space-between;
+		p {
+			color: #555555;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 20px;
+			margin: 0px 10px;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				height: 15px;
+				width: 1px;
+				background: #252525;
+				right: -10px;
+				top: 4px;
+			}
+			span {
+				color: #959595;
+			}
+			&:nth-child(3) {
+				color: #c7b299;
+			}
+			&:nth-child(4) {
+				&:after {
+					content: "";
+					position: absolute;
+					height: 0px;
+					width: 0px;
+				}
+			}
+		}	
+	}
+	&__right {
+		@include flexbox ();
+		justify-content: space-between;
+		p {
+			color: #555555;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 20px;
+			margin: 0px 10px;
+			&:first-child {
+			position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					height: 15px;
+					width: 1px;
+					background: #252525;
+					right: -10px;
+					top: 4px;
+				}
+			}
+			span {
+				color: #959595;
+			}
+		}
+	}
+}
+
+@media (max-width: 1220px) {
+	.footer {
+		&__top {}
+		&__box {
+			display: block;
+		}
+		&__columnLef {
+			justify-content: space-around;
+			margin: 0px 0px 50px 0px;
+		}
+		&__columnRigh {
+			justify-content: space-around;
+		}
+		&__bott {}
+		&__boxbott {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__left {
+			margin: 0 auto;
+			padding: 0px 0px 15px 0px;
+		&__right {
+			margin:0 auto;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.footer {
+		&__top {}
+		&__box {
+		}
+		&__columnLef {
+			display: block;
+		}
+		&__columnRigh {
+			display: block;
+		}
+		&__col1 {
+			margin: 20px auto;
+		}
+		&__txt {}
+		&__col2 {
+			margin: 20px auto;
+		}
+		&__title {}
+		&__time {}
+		&__col3 {
+			margin: 20px auto;
+		}
+		&__col4 {
+			margin: 30px auto;
+		}
+		&__bott {}
+		&__boxbott {}
+		&__left {}
+		&__right {}
+	}
+}
+
+@media (max-width: 500px) {
+	.footer {
+		&__top {}
+		&__box {
+		}
+		&__columnLef {
+		}
+		&__columnRigh {
+
+		}
+		&__col1 {
+
+		}
+		&__txt {}
+		&__col2 {
+		}
+		&__title {}
+		&__time {}
+		&__col3 {
+		}
+		&__col4 {
+		}
+		&__bott {}
+		&__boxbott {
+			text-align: center;
+		}
+		&__left {
+			display: block;
+			p {
+				position: relative;
+				margin: 0px 0px 10px 0px;
+				&:after {
+					content: "";
+					position: absolute;
+					height: 1px;
+					width: 100%;
+					background: #252525;
+					left: 0;
+					top: 23px;
+				}
+				&:nth-child(4) {
+					&:after {
+						content: "";
+						position: absolute;
+						height: 1px;
+						width: 100%;
+						background: #252525;
+						left: 0;
+						top: 23px;
+					}	
+				}
+			}	
+		}
+		&__right {
+			display: block;
+			position: relative;
+			p {
+				&:first-child {
+				position: relative;
+				margin: -10px 0px 10px 0px;
+					&:after {
+						content: "";
+						position: absolute;
+						height: 1px;
+						width: 97%;
+						background: #252525;
+						left: 3px;
+						top: 23px;
+					}
+				}
+			}
+		}
+	}
+}
+}
