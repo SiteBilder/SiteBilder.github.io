@@ -38,7 +38,7 @@ $(document).ready(function(){
 		fade: false,
 		// asNavFor: '',
 		responsive: [{
-			breakpoint: 1024 ,
+			breakpoint: 1054 ,
 			settings: {
 				arrows: false,
 			}

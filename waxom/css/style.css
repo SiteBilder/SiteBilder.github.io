@@ -298,6 +298,10 @@ body {
   .portfolio__get {
     padding: 15px 25px;
   }
+
+  .slider .slick-dots {
+    bottom: 5px;
+  }
 }
 .work__box {
   display: flex;
