@@ -37,11 +37,12 @@ $(document).ready(function(){
 		verticalSwiping: false,
 		fade: false,
 		// asNavFor: '',
-		// responsive: [{
-		// 	breakpoint: ,
-		// 	settings: {
-		// 	}
-		// }]
+		responsive: [{
+			breakpoint: 1024 ,
+			settings: {
+				arrows: false,
+			}
+		}]
 		// mobileFirst:
 		// атрибут <img> data-lazy:''
 	})
