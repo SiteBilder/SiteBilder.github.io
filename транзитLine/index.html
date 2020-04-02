@@ -2,13 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Главная</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 	<div class="wrapper">
-<header>
+<div class="popUp-call">
+	<div class="popUp-call__box">
+		<div class="popUp-call__close">
+			<img src="img/close.png" alt="">
+		</div>
+		<div class="popUp-call__title">
+			<p>Хотите чтобы мы перезвонили?</p>
+			<p>Заполните форму и мы вам перезвоним в ближайшее время</p>
+			<form class="popUp-call__form" action="#" name="call">
+				<input type="text" placeholder="  Ваше имя">
+				<input type="text" placeholder="  Телефон">
+				<p><input type="checkbox">Соглашаюсь на обработку персональных данных</p>
+			</form>
+		<div class="popUp-call__bttn"><span class="popOut">Перезвоните мне</span></div>	
+		</div>
+	</div>
+</div>
+
+<div class="popUp-buy">
+	<div class="popUp-buy__box">
+		<div class="popUp-buy__close">
+			<img src="img/close.png" alt="">
+		</div>
+		<div class="popUp-buy__title">
+			<p>Хотите заказать перевозку?</p>
+			<p>Заполните форму и мы вам перезвоним в ближайшее время</p>
+			<form class="popUp-buy__form" action="#" name="call">
+				<input type="text" placeholder="  Ваше имя">
+				<input type="text" placeholder="  Телефон">
+				<p><input type="checkbox">Соглашаюсь на обработку персональных данных</p>
+			</form>
+		<div class="popUp-buy__bttn"><span  class="popOut">Заказать</span></div>	
+		</div>
+	</div>
+</div>
+
+<div class="popUp-out">
+	<div class="popUp-out__box">
+		<div class="popUp-out__close">
+			<img src="img/close.png" alt="">
+		</div>
+		<div class="popUp-out__img">
+			<img src="img/popUp.png" alt="">
+		</div>
+		<div class="popUp-out__inf">
+			<div class="popUp-out__title">
+				Спасибо за обращение!
+			</div>
+			<div class="popUp-out__txt">
+				Наши сотрудники свяжутся с вами в ближайшее время!
+			</div>
+		</div>
+	</div>
+</div><header>
 	<div class="header">
 		<div class="header-up">
 			<div class="container">	
@@ -50,10 +103,10 @@
 							7 (495) 995-08-09
 						</p>
 						<p>
-							<a href="">
+							<span href="" class="popCall">
 								<img src="img/header/icon/icon5.png" alt="">
 								Обратный звонок
-							</a>
+							</span>
 						</p>
 					</div>
 				</div>
@@ -64,8 +117,8 @@
 					</div>
 					<nav class="rowDown__menu menu">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="">Услуги</a></li>
-							<li class="menu__item"><a href="">Автопарк</a></li>
+							<li class="menu__item"><a href="services.html">Услуги</a></li>
+							<li class="menu__item"><a href="carpark.html">Автопарк</a></li>
 							<li class="menu__item"><a href="">Калькулятор</a></li>
 							<li class="menu__item"><a href="">О компании</a></li>
 							<li class="menu__item"><a href="">Цены</a></li>
@@ -162,7 +215,7 @@
 							</div>
 						</div>
 						<div class="feature__bttn">
-							<span>ЗАКАЗАТЬ</span>
+							<span class="popBuy">ЗАКАЗАТЬ</span>
 						</div>
 					</div>
 				</div>
@@ -209,7 +262,7 @@
 								<div class="service-tab__txt">
 									<div class="service-tab__title">КВАРТИРНЫЙ ПЕРЕЕЗД по России</div>
 									<div class="service-tab__inf">Переезд офиса заканчивается вовремя, когда работает «ГрузовичкоФ». Вызовите нашего бесплатного оценщика и оптимизируйте затраты — менеджер выставит цену, которая останется фиксированной. Перевезите вещи с помощью грузчиков или закажите полное сопровождение переезда: с подключением офисной техники, установкой мебели и внутренних перегородок.</div>
-									<div class="service-tab__btt"><span>ЗАКАЗАТЬ</span></div>
+									<div class="service-tab__btt"><span class="popBuy">ЗАКАЗАТЬ</span></div>
 								</div>
 							</div>						
 							<div class="service-tab__item">
@@ -217,7 +270,7 @@
 								<div class="service-tab__txt">
 									<div class="service-tab__title">ПЕРЕЕЗД ОФИСА</div>
 									<div class="service-tab__inf">Переезд офиса заканчивается вовремя, когда работает «ГрузовичкоФ». Вызовите нашего бесплатного оценщика и оптимизируйте затраты — менеджер выставит цену, которая останется фиксированной. Перевезите вещи с помощью грузчиков или закажите полное сопровождение переезда: с подключением офисной техники, установкой мебели и внутренних перегородок.</div>
-									<div class="service-tab__btt"><span>ЗАКАЗАТЬ</span></div>
+									<div class="service-tab__btt"><span class="popBuy">ЗАКАЗАТЬ</span></div>
 								</div>
 							</div>
 							<div class="service-tab__item">	
@@ -225,7 +278,7 @@
 								<div class="service-tab__txt">
 									<div class="service-tab__title">Перевозка попутной машиной</div>
 									<div class="service-tab__inf">Переезд офиса заканчивается вовремя, когда работает «ГрузовичкоФ». Вызовите нашего бесплатного оценщика и оптимизируйте затраты — менеджер выставит цену, которая останется фиксированной. Перевезите вещи с помощью грузчиков или закажите полное сопровождение переезда: с подключением офисной техники, установкой мебели и внутренних перегородок.</div>
-									<div class="service-tab__btt"><span>ЗАКАЗАТЬ</span></div>
+									<div class="service-tab__btt"><span class="popBuy">ЗАКАЗАТЬ</span></div>
 								</div>
 							</div>
 							<div class="service-tab__item">
@@ -233,7 +286,7 @@
 								<div class="service-tab__txt">
 									<div class="service-tab__title">Перевозка мебели</div>
 									<div class="service-tab__inf">Переезд офиса заканчивается вовремя, когда работает «ГрузовичкоФ». Вызовите нашего бесплатного оценщика и оптимизируйте затраты — менеджер выставит цену, которая останется фиксированной. Перевезите вещи с помощью грузчиков или закажите полное сопровождение переезда: с подключением офисной техники, установкой мебели и внутренних перегородок.</div>
-									<div class="service-tab__btt"><span>ЗАКАЗАТЬ</span></div>
+									<div class="service-tab__btt"><span class="popBuy">ЗАКАЗАТЬ</span></div>
 								</div>
 							</div>
 							<div class="service-tab__item">		
@@ -241,7 +294,7 @@
 								<div class="service-tab__txt">
 									<div class="service-tab__title">Перевозка строительных грузов</div>
 									<div class="service-tab__inf">Переезд офиса заканчивается вовремя, когда работает «ГрузовичкоФ». Вызовите нашего бесплатного оценщика и оптимизируйте затраты — менеджер выставит цену, которая останется фиксированной. Перевезите вещи с помощью грузчиков или закажите полное сопровождение переезда: с подключением офисной техники, установкой мебели и внутренних перегородок.</div>
-									<div class="service-tab__btt"><span>ЗАКАЗАТЬ</span></div>
+									<div class="service-tab__btt"><span class="popBuy">ЗАКАЗАТЬ</span></div>
 								</div>						
 							</div>
 						</div>
@@ -315,7 +368,7 @@
 									</ul>
 								</div>
 								<div class="park__righ">
-									<span>Заказать</span>
+									<span class="popBuy">Заказать</span>
 								</div>
 							</div>
 							<div class="autopark__item park">
@@ -333,7 +386,7 @@
 									</ul>
 								</div>
 								<div class="park__righ">
-									<span>Заказать</span>
+									<span class="popBuy">Заказать</span>
 								</div>
 							</div>
 							<div class="autopark__item park">
@@ -351,7 +404,7 @@
 									</ul>
 								</div>
 								<div class="park__righ">
-									<span>Заказать</span>
+									<span class="popBuy">Заказать</span>
 								</div>
 							</div>
 						</div>
@@ -429,7 +482,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="review__bttn"><span>Хочу так же!</span></div>
+						<div class="review__bttn"><span class="popBuy">Хочу так же!</span></div>
 					</div>
 				</div>
 			</section>
@@ -438,8 +491,8 @@
 					<div class="container">
 						<div class="buy__box">
 							<div class="buy__img">
-								<img src="../img/buy.png" alt="">
-								<img src="../img/buyLogo.png" alt="">
+								<img src="img/buy.png" alt="">
+								<img src="img/buyLogo.png" alt="">
 							</div>
 							<div class="buy__right">
 								<div class="buy__title">
@@ -451,7 +504,7 @@
 									<input type="text" placeholder="  Телефон">
 									<p><input type="checkbox" id="dataBuy" ><label for="dataBuy">Соглашаюсь на обработку персональных данных</label></p>
 								</form>
-								<div class="buy__bttn"><span>Перезвоните мне</span></div>
+								<div class="buy__bttn"><span class="popCall">Перезвоните мне</span></div>
 							</div>
 						</div>
 					</div>

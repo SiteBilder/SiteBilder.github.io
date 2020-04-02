@@ -120,10 +120,11 @@
 				background-color: #ffaf00;
 				padding: 10px 0 7px 0;
 				text-align: center;
-				a {
+				span {
 					color: #000000;
 					font-size: 16px;
 					font-weight: 400;
+					cursor: pointer;
 				}
 			}
 		}
@@ -138,7 +139,8 @@
 	&__burger {
 		display: none;
 	}
-	&__menu {}
+	&__menu {
+	}
 	&__search {
 		width: 231px;
 		border-bottom: 1px solid #ffffff;
@@ -173,6 +175,9 @@
 			color: #ffffff;
 			font-size: 18px;
 			font-weight: 300;
+			&:hover {
+				color: #fead38;
+			}
 		}
 	}
 }
@@ -406,8 +411,6 @@
 		}
 	}
 }
-
-
 
 
 

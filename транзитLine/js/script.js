@@ -341,3 +341,148 @@ function spoiler() {
 }
 
  spoiler();
+
+
+let autopark = $('title').html();
+
+if(autopark == 'Автопарк' || autopark == 'Услуги' ){
+	$('.header').css('background', 'url("../img/slider.png") center / cover')
+
+	$('header').css('height', '244px');
+}
+
+//Slider(brands)
+$(document).ready(function(){
+	$('.slider-brand__box').slick({
+		arrows:true,
+		dots: false,
+		adaptiveHeigh: true,
+		slidesToShow: 4,
+		slidesToScroll:1,
+		speed: 1000,
+		easing: 'linear',
+		infinite: true,
+		initialSlide:0,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		draggable: true,
+		swipe: true,
+		touchThreshold: 5,
+		touchMove: true,
+		waiteForAnimate: false,
+		centerMode: false,
+		variableWith: false,
+		rows: 1,
+		slidesPerRow: 1,
+		vertical: false,
+		verticalSwiping: false,
+		fade: false,
+		responsive: [{
+			breakpoint:1024 ,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint:778 ,
+			settings: {
+				slidesToShow: 2,
+			}
+		},	
+		{
+			breakpoint:500 ,
+			settings: {
+				slidesToShow: 1,
+			}
+		}]
+	})
+})
+
+
+//Slider(services)
+$(document).ready(function(){
+	$('.services-photo__slider').slick({
+		arrows:true,
+		dots: false,
+		adaptiveHeigh: true,
+		slidesToShow: 4,
+		slidesToScroll:1,
+		speed: 1000,
+		easing: 'linear',
+		infinite: true,
+		initialSlide:0,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		draggable: true,
+		swipe: true,
+		touchThreshold: 5,
+		touchMove: true,
+		waiteForAnimate: false,
+		centerMode: false,
+		variableWith: false,
+		rows: 1,
+		slidesPerRow: 1,
+		vertical: false,
+		verticalSwiping: false,
+		fade: false,
+		responsive: [{
+			breakpoint:1222 ,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint:993 ,
+			settings: {
+				slidesToShow: 2,
+			}
+		},	
+		{
+			breakpoint:600 ,
+			settings: {
+				slidesToShow: 1,
+			}
+		}]
+	})
+})
+
+//Pop-up
+$('.popCall').click(function() {
+
+	$('.popUp-call').css('display', 'block');
+	$('body').addClass('lock');
+})
+$('.popUp-call__close').click(function() {
+
+	$('.popUp-call').css('display', 'none');
+	$('body').removeClass('lock');
+})
+
+$('.popBuy').click(function() {
+
+	$('.popUp-buy').css('display', 'block');
+	$('body').addClass('lock');
+})
+$('.popUp-buy__close').click(function() {
+
+	$('.popUp-buy').css('display', 'none');
+	$('body').removeClass('lock');
+})
+
+$('.popOut').click(function() {
+
+	$('.popUp-buy').css('display', 'none');
+	$('.popUp-call').css('display', 'none');
+	$('.popUp-out').css('display', 'block');
+})
+$('.popUp-out__close').click(function() {
+
+	$('.popUp-out').css('display', 'none');
+	$('body').removeClass('lock');
+})
