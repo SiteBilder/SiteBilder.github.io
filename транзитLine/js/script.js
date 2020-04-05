@@ -270,39 +270,7 @@ $(document).ready(function(){
 		easing: 'linear',
 		infinite: true,
 		initialSlide:0,
-		autoplay: false,
-		autoplaySpeed: 1000,
-		pauseOnFocus: true,
-		pauseOnHover: true,
-		pauseOnDotsHover: true,
-		draggable: true,
-		swipe: true,
-		touchThreshold: 5,
-		touchMove: true,
-		waiteForAnimate: false,
-		centerMode: false,
-		variableWith: false,
-		rows: 1,
-		slidesPerRow: 1,
-		vertical: false,
-		verticalSwiping: false,
-		fade: false,
-	})
-})
-
-//Slider(review)
-$(document).ready(function(){
-	$('.review__slider').slick({
-		arrows:true,
-		dots: false,
-		adaptiveHeigh: true,
-		slidesToShow: 1,
-		slidesToScroll:1,
-		speed: 1000,
-		easing: 'linear',
-		infinite: true,
-		initialSlide:0,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 2000,
 		pauseOnFocus: true,
 		pauseOnHover: true,
@@ -319,6 +287,40 @@ $(document).ready(function(){
 		vertical: false,
 		verticalSwiping: false,
 		fade: false,
+		asNavFor: '.review__slider',
+	})
+})
+
+//Slider(review)
+$(document).ready(function(){
+	$('.review__slider').slick({
+		arrows:true,
+		dots: false,
+		adaptiveHeigh: true,
+		slidesToShow: 1,
+		slidesToScroll:1,
+		speed: 1000,
+		easing: 'linear',
+		infinite: true,
+		initialSlide:0,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		draggable: true,
+		swipe: true,
+		touchThreshold: 5,
+		touchMove: true,
+		waiteForAnimate: false,
+		centerMode: false,
+		variableWith: false,
+		rows: 1,
+		slidesPerRow: 1,
+		vertical: false,
+		verticalSwiping: false,
+		fade: false,
+		asNavFor: '.autopark__slider',
 	})
 })
 
@@ -346,7 +348,7 @@ function spoiler() {
 let autopark = $('title').html();
 
 if(autopark == 'Автопарк' || autopark == 'Услуги' ){
-	$('.header').css('background', 'url("img/slider.png") center / cover')
+	$('.header').css('background', 'url("../img/slider.png") center / cover')
 
 	$('header').css('height', '244px');
 }
@@ -455,34 +457,34 @@ $(document).ready(function(){
 //Pop-up
 $('.popCall').click(function() {
 
-	$('.popUp-call').css('display', 'block');
+	$('.popUp-call').fadeIn();
 	$('body').addClass('lock');
 })
 $('.popUp-call__close').click(function() {
 
-	$('.popUp-call').css('display', 'none');
+	$('.popUp-call').fadeOut();
 	$('body').removeClass('lock');
 })
 
 $('.popBuy').click(function() {
 
-	$('.popUp-buy').css('display', 'block');
+	$('.popUp-buy').fadeIn();
 	$('body').addClass('lock');
 })
 $('.popUp-buy__close').click(function() {
 
-	$('.popUp-buy').css('display', 'none');
+	$('.popUp-buy').fadeOut();
 	$('body').removeClass('lock');
 })
 
 $('.popOut').click(function() {
 
-	$('.popUp-buy').css('display', 'none');
-	$('.popUp-call').css('display', 'none');
-	$('.popUp-out').css('display', 'block');
+	$('.popUp-buy').fadeOut();
+	$('.popUp-call').fadeOut();
+	$('.popUp-out').fadeIn();
 })
 $('.popUp-out__close').click(function() {
 
-	$('.popUp-out').css('display', 'none');
+	$('.popUp-out').fadeOut();
 	$('body').removeClass('lock');
 })

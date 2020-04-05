@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Главная</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -138,13 +139,39 @@
 		</div>
 	</div>
 </header>		<main>
-			<section>
+			<section class="first-section">
 				<div class="sale">	
 					<div class="sale-slider">
 						<div class="sale-slider__item sale-slider__item_1"></div>
 						<div class="sale-slider__item sale-slider__item_2"></div>
 						<div class="sale-slider__item sale-slider__item_3"></div>
 						<div class="sale-slider__item sale-slider__item_4"></div>
+					</div>
+				</div>
+				<div class="first">
+					<div class="container">
+						<div class="first__box">	
+							<div class="first__left">
+								<img src="../img/firstLogo.png" alt="">
+								<p>Офисный  переезд</p>
+								<p>в выходные со скидкой</p>
+								<p>15%</p>
+							</div>
+							<div class="first__right wow jackInTheBox">
+								<p>Закажите прямо сейчас</p>
+								<p>Мы перезвоним Вам в ближайшее время</p>
+								<form action="#" name="booking">
+									<input type="text" placeholder="  Ваше имя">
+									<input type="text" placeholder="  Телефон">
+									<p><input id="consent" type="checkbox"><label for="consent">Соглашаюсь на обработку персональных данных</label></p>
+									<div class="btn">
+										<button type="submit">
+											Перезвоните мне
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -165,49 +192,49 @@
 							НАШИ ПРЕИМУЩЕСТВА
 						</div>
 						<div class="feature__box">
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
-									<img src="img/feature/feature1.png" alt="">
+									<img  src="img/feature/feature1.png" alt="">
 								</div>
 								<div class="card__title"> Удобные способы оплаты</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature2.png" alt="">
 								</div>
 								<div class="card__title">Пакет закрывающих документов для юр.лиц</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature3.png" alt="">
 								</div>
 								<div class="card__title">Полная материальная ответственность за принятый груз</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature4.png" alt="">
 								</div>
 								<div class="card__title">Круглосуточная поддержка ( в том числе Whatsapp, Viber, SMS )</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature5.png" alt="">
 								</div>
 								<div class="card__title">Персональный менеджер</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature6.png" alt="">
 								</div>
 								<div class="card__title">Точное время подачи машины</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature7.png" alt="">
 								</div>
 								<div class="card__title">Бережная и быстрая транспортировка груза</div>
 							</div>
-							<div class="feature__card card">
+							<div class="feature__card card wow jackInTheBox">
 								<div class="card__circle">
 									<img src="img/feature/feature8.png" alt="">
 								</div>
@@ -490,7 +517,7 @@
 				<div class="buy">
 					<div class="container">
 						<div class="buy__box">
-							<div class="buy__img">
+							<div class="buy__img wow rotateInDownLeft">
 								<img src="img/buy.png" alt="">
 								<img src="img/buyLogo.png" alt="">
 							</div>
@@ -504,7 +531,7 @@
 									<input type="text" placeholder="  Телефон">
 									<p><input type="checkbox" id="dataBuy" ><label for="dataBuy">Соглашаюсь на обработку персональных данных</label></p>
 								</form>
-								<div class="buy__bttn"><span class="popCall">Перезвоните мне</span></div>
+								<div class="buy__bttn"><span>Перезвоните мне</span></div>
 							</div>
 						</div>
 					</div>
@@ -517,11 +544,11 @@
 							Нам доверяют
 						</div>
 						<div class="partners__img">
-							<img src="img/partners/partners1.png" alt="">
-							<img src="img/partners/partners2.png" alt="">
-							<img src="img/partners/partners3.png" alt="">
-							<img src="img/partners/partners4.png" alt="">
-							<img src="img/partners/partners5.png" alt="">
+							<img class="wow jackInTheBox" src="img/partners/partners1.png" alt="">
+							<img class="wow jackInTheBox" src="img/partners/partners2.png" alt="">
+							<img class="wow jackInTheBox" src="img/partners/partners3.png" alt="">
+							<img class="wow jackInTheBox" src="img/partners/partners4.png" alt="">
+							<img class="wow jackInTheBox" src="img/partners/partners5.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -630,6 +657,8 @@
 </footer>	</div>		
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
 <script src="js/slick.min.js"></script>	
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 <script src="js/script.js"></script>
 </body>
 </html>
