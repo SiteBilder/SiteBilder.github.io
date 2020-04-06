@@ -126,10 +126,10 @@ body {
   height: 100vh;
 }
 .slider__item_first {
-  background: url("../img/slide1.jpg") center/cover;
+  background: url("../img/slide3.png") center/cover;
 }
 .slider__item_second {
-  background: url("../img/slide3.jpg") center/cover;
+  background: url("../img/slide3.png") center/cover;
 }
 .slider__item_third {
   background: url("../img/slide3.png") center/cover;
@@ -698,14 +698,14 @@ body {
   transform: translate(-50%, -50%);
 }
 .video__title {
-  color: #ffffff;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 500;
   margin: 44px 0px 29px 0px;
 }
 .video__txt {
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;

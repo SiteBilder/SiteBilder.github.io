@@ -52,10 +52,10 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
+
 body {
 	overflow-x: hidden;
 }
-
 .wrapper {
 	overflow: hidden;
 	min-height: 100%;
@@ -75,10 +75,10 @@ body {
 	&__item {
 		height: 100vh;
 		&_first{
-			background: url('../img/slide1.jpg') center / cover;
+			background: url('../img/slide3.png') center / cover;
 		}
 		&_second{
-			background: url('../img/slide3.jpg') center / cover;
+			background: url('../img/slide3.png') center / cover;
 		}
 		&_third{
 			background: url('../img/slide3.png') center / cover;
@@ -679,14 +679,14 @@ body {
 		transform: translate(-50%, -50%);
 	}
 	&__title {
-		color: #ffffff;
+		color: #fff;
 		font-family: 'Raleway', sans-serif;
 		font-size: 30px;
 		font-weight: 500;
 		margin: 44px 0px 29px 0px;
 	}
 	&__txt {
-		color: #ffffff;
+		color: #fff;
 		font-size: 16px;
 		font-weight: 300;
 		line-height: 28px;

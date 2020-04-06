@@ -114,27 +114,28 @@ function itemsShow () {
 	document.querySelector('.items__hide').style.width = '100%';
 }
 
+//Tabs
+let blocks = document.querySelectorAll('.tab');
+let tab = document.querySelectorAll('.projects__tabs a')
+
+tab[0].parentElement.classList.add('activetab');
+
 document.querySelector('.projects__tabs').onclick = function (event) {
-	
-	let tabs = document.querySelectorAll('a[href*="#"]');
-	let id = event.target.getAttribute('href');
-	let miss = document.querySelector('.projects__tabs');
-	let misstwo = document.querySelectorAll(' .projects__tabs span');
-
-	for (var i = 0; i < misstwo.length; i++) {
-		if (event.target == miss || event.target == misstwo[i]) {return false}
-		misstwo[i].classList.remove('activetab');	
+	if(event.target.className == 'tabb') {
+		let attr = event.target.getAttribute('data-tab');
+		
+		for (var i = 0; i < tab.length; i++) {
+			if(attr == i) {
+				blocks[i].style.display = 'flex';
+				tab[i].parentElement.classList.add('activetab');
+			}
+			else {
+				blocks[i].style.display = 'none';
+				tab[i].parentElement.classList.remove('activetab');
+			}
+		}
 	}
 
-	for(let tab of tabs ){
-		let atrb = tab.getAttribute('href');
-		document.querySelector(atrb).style.display = 'none';	
-	}
-
-	event.target.parentElement.classList.add('activetab');
-	
-
-	document.querySelector(id).style.display = 'flex';	
 }
 
 
@@ -151,3 +152,5 @@ for (var i = 0; i < post.length; i++) {
 		event.target.classList.remove('postactive');
 	}
 }
+
+
