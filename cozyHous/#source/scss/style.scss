@@ -27,6 +27,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 body {
 }
 
+.lock {
+	overflow: hidden;
+}
+
 .wrapper {
 	width: 100%;
 	overflow: hidden;
@@ -39,7 +43,7 @@ body {
 }
 
 .home {
-	background: url(../img/Background.png) 0 0/cover;
+	background-color: rgba(63,44,13,1);
 	&__box {
 		display: flex;
 		justify-content: space-between;

@@ -185,7 +185,7 @@ body.lock {
   overflow: hidden; }
 
 .footer {
-  background: url("../img/Backround2.png") center/cover; }
+  background-color: #3f2c0d; }
   .footer__box {
     display: flex;
     justify-content: space-between;
@@ -425,6 +425,9 @@ body.lock {
     .popupPets__box {
       flex-direction: column; } }
 
+.lock {
+  overflow: hidden; }
+
 .wrapper {
   width: 100%;
   overflow: hidden; }
@@ -435,7 +438,7 @@ body.lock {
   padding: 0px 20px; }
 
 .home {
-  background: url(../img/Background.png) 0 0/cover; }
+  background-color: #3f2c0d; }
   .home__box {
     display: flex;
     justify-content: space-between; }

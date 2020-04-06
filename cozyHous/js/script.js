@@ -68,11 +68,14 @@ function popupPets (event) {
 			
 			popupPets.style.display = 'flex';
 			petsBox[i].style.display = 'flex';
+			document.querySelector('body').classList.add('lock');
 
 		}else if (popupPetsClose[i] == event.target) {
 			
 			popupPets.style.display = 'none';
 			petsBox[i].style.display = 'none';
+			document.querySelector('body').classList.remove('lock');
+
 		}
 	}
 }
