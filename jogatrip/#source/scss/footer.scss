@@ -1,0 +1,154 @@
+.footer {
+	&__top {
+		padding: 50px 0 55px 0;
+		background: #fcf9f1;
+	}
+	&__contact {
+		>p {
+			font-size: 22px;
+			font-weight: 700;
+		}
+	}
+	&__connect {
+		@include flexbox();
+		margin: 28px 0 28px 0;
+	}
+	&__media {
+		margin: 0 136px 0 0;
+		p {
+			font-size: 16px;
+			font-weight: 700;
+			margin: 0 0 20px 0;
+		}
+		img {
+			margin: 0 20px 0 0;
+		}
+	}
+	&__tel {
+		p {
+			&:nth-child(1) {
+				font-size: 16px;
+				font-weight: 700;
+			}
+			&:nth-child(2) {
+				font-size: 12px;
+				font-style: italic;
+				margin: 13px 0 7px 0;
+			}
+			&:nth-child(3) {
+				font-size: 28px;
+				font-weight: 700;
+			}
+		}
+	}
+	&__geo {
+		>p {
+			font-size: 16px;
+			font-weight: 700;
+			margin: 0 0 17px 0;
+		}
+	}
+	&__map {
+		@include flexbox();
+		div {
+			margin: 0 10px 0 0;
+			p {
+				width: 200px;
+				margin: 15px 0 0 0;
+				font-weight: 600;
+			}
+		}
+	}
+	&__bottom {
+		background-color: #383838;
+		padding: 12px 0;
+	}
+	&__box {
+		@include flexbox();
+		justify-content: space-between;
+	}
+	&__left {
+		@include flexbox();
+		align-items: center;
+		margin: 0 30px 0 0;
+	}
+	&__site {
+		margin: 0 0 0 40px;
+		p {
+			color: #ffffff;
+			font-size: 9px;	
+		}
+		a {
+			color: #ffffff;
+			font-size: 20px;
+			font-weight: 700;
+			text-decoration: underline;
+			margin: 12px 0 0 0;
+			display: inline-block;	
+		}
+	}
+	&__right {
+		max-width: 395px;
+		p {
+			line-height: 17px;
+			color: #ffffff;
+			font-size: 12px;
+			&:first-child {
+				margin: 0 0 7px 0;
+			}
+		}		
+	}
+}
+
+@media(max-width: 768px) {
+	.footer {
+		&__box {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__left {
+			order: 2;
+			margin: 30px 0 0 0;
+		}
+	}
+} 
+@media(max-width: 650px) {
+	.footer {
+		&__top {}
+		&__contact {
+			>p {
+				text-align: center;
+			}
+		}
+		&__connect {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__media {
+			margin: 0 0 40px 0;
+		}
+		&__tel {
+			text-align: center;
+			margin: 0 0 30px 0;
+		}
+		&__geo {
+			>p {
+				text-align: center;
+				font-size: 25px;
+				margin: 0 0 25px 0;
+			}
+		}
+		&__map {
+			flex-direction: column;
+			align-items: center;
+			div {
+				margin: 0 0 25px 0;
+			}
+		}
+		&__bottom {}
+		&__box {}
+		&__left {}
+		&__site {}
+		&__right {}
+	}
+}
