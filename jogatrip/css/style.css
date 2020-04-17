@@ -663,10 +663,10 @@ h1, h2, h3, h4, h5, h6 {
     .review {
       padding: 100px 0 0 0; } }
   .review__box {
-    padding: 80px 0 140px 0; }
+    padding: 170px 0 140px 0; }
     @media (max-width: 500px) {
       .review__box {
-        padding: 40px 0 70px 0; } }
+        padding: 100px 0 70px 0; } }
 
 .review-slider {
   margin: 80px 0 0 0;
