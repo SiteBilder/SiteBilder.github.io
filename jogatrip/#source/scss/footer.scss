@@ -22,6 +22,12 @@
 		}
 		img {
 			margin: 0 20px 0 0;
+			border-radius: 10%;
+			transition: 1s all ease 0s;
+			&:hover {
+				transform: rotate(360deg);
+				background: #000;
+			}
 		}
 	}
 	&__tel {

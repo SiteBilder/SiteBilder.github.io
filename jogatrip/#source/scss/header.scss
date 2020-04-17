@@ -11,10 +11,7 @@ header {
 	padding: 20px 10px 0 10px;
 	&__logo {
 		img {
-			transition: 1s all linear 0s;
-			&:hover {
-				transform: rotate(360deg);
-			}
+			
 		}
 		@media(max-width: 479.98px) {
 			transform: scale(0.7);
@@ -28,11 +25,10 @@ header {
 			color: #ffffff;
 			font-size: 20px;
 			margin: 10px 0 0 0;
-			animation: phone 4s linear infinite normal running 0s none;
 			text-align: right;
 			letter-spacing: 1px;
 			&:hover {
-				animation-play-state: paused;
+				color: orange;
 			}
 		}
 		@media(max-width: 479.98px) {
@@ -41,13 +37,5 @@ header {
 				font-size: 18px;
 			}
 		}
-	}
-}
-
-@keyframes phone{
-	0%{
-	}
-	100%{
-		color: orange;
 	}
 }
