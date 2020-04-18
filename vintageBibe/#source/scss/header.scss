@@ -79,6 +79,9 @@
 				color: #cecbd1;
 				font-size: 25px;
 				position: relative;
+				&:hover {
+					color: green;
+				}
 			}
 			&:first-child {
 				position: relative;

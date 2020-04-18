@@ -15,17 +15,13 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
-$font:'Lato', sans-serif;
-
-//Подключение файлов
-@import "header.scss";
-@import "footer.scss"
 
 //Подключение шрифтов
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap');
 
-body {
-}
+$font:'Lato', sans-serif;
+
+
 .lock {
 	overflow: hidden;
 }
@@ -370,12 +366,6 @@ body {
 	}
 }
 
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
 }
@@ -384,25 +374,7 @@ body {
 	display: flex;
 	align-items: flex-start;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
+
 .slick-dots{
 	display: flex;
 	justify-content: center;
@@ -560,26 +532,7 @@ body {
 @media (max-width: 700px) {
 	.shop {
 		display: block;
-		&__left {}
-		&__topLeft {
-			&_3 {}
-			&_4 {}
-		}
-		&__bottLeft {}
-		&__center {
-			&_1 {}
-			&_2 {}
-		}
-		&__right {}
-		&__topRight {}
-		&__bottRight {
-			&_5 {}
-			&_6 {}
-		}
-	}
-	.back {
-	}
-
+	}	
 }
 
 @media(max-width: 520px) {
@@ -643,7 +596,7 @@ body {
 			font-size: 20px;
 			line-height: 24px;
 			margin: 35px 10px 20px 0px;
-			padding: 0px 5px 0px 5px;
+			padding: 0px 5px 0px 20px;
 		}
 		button {
 			width: 126px;
@@ -678,3 +631,6 @@ body {
 	}
 }
 
+//Подключение файлов
+@import "header.scss";
+@import "footer.scss";
