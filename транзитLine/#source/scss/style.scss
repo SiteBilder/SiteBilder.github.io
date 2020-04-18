@@ -70,16 +70,16 @@ body {
 		min-height: 100vh;
 		width: 100%;
 		&_1 {
-			background:url('../img/slider.png') center / cover no-repeat;
+			background:url('../img/slider.jpg') center / cover no-repeat;
 		}
 		&_2 {
-			background:url('../img/slider.png') center / cover no-repeat;
+			background:url('../img/slider.jpg') center / cover no-repeat;
 		}
 		&_3 {
-			background:url('../img/slider.png') center / cover no-repeat;
+			background:url('../img/slider.jpg') center / cover no-repeat;
 		}
 		&_4 {
-			background:url('../img/slider.png') center / cover no-repeat;
+			background:url('../img/slider.jpg') center / cover no-repeat;
 		}
 	}
 }
@@ -325,7 +325,7 @@ body {
 }
 
 .feature {
-	background: url('../img/feature/featureFon.png') center / cover;
+	background: url('../img/feature/featureFon.jpg') center / cover;
 	padding: 65px 0px 85px 0px;
 	&__title {
 		color: #ffffff;
