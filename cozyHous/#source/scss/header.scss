@@ -70,6 +70,7 @@
 			position: relative;
 			width: 35px;
 			height: 25px;
+			z-index: 50;
 			&:before {
 				content: "";
 				position: absolute;
@@ -100,12 +101,11 @@
 			position: fixed;
 			top: 0;
 			left: -1000px;
-			width: 50%;
+			width: 100%;
 			height: 100%;
-			background: #624433;
+			background: rgba(98, 68, 51, 0.9);
 			overflow: auto;
 			transition: 1s all ease 0s;
-			border-right: 5px solid #252121;
 		}
 		&__list {
 			flex-direction: column;

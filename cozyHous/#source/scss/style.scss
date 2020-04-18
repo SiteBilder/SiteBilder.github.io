@@ -43,7 +43,7 @@ body {
 }
 
 .home {
-	background-color: rgba(63,44,13,1);
+	background-color: #808000;
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -332,7 +332,7 @@ body {
 		text-align: center;
 		box-sizing: content-box;
 		&:hover {
-			border-bottom: 3px solid #545454;
+			border-right: 1px solid #545454;
 		}
 		img {
 			margin: 0px 0px 30px 0px;
@@ -351,16 +351,18 @@ body {
 	background: #f6f6f6;
 	&__box {
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		max-width: 925px;
 		margin: 0px auto;
 		padding: 70px 0px 85px 0px;
 	}
 	&__img {
-		margin: 0px 50px 0px 0px;
 		object-fit: contain;
 		max-width: 100%;
 	}
-	&__inf {}
+	&__inf {
+	}
 	&__title {}
 	&__bank {
 		p {
@@ -389,6 +391,11 @@ body {
 		font-size: 12px;
 		line-height: 22px;
 		margin: 40px 0px 0px 0px;
+		p {
+			&:first-child {
+				margin: 0 0 10px 0;
+			}
+		}
 	}
 }
 
