@@ -346,7 +346,7 @@ function spoiler() {
 let autopark = $('title').html();
 
 if(autopark == 'Автопарк' || autopark == 'Услуги' ){
-	$('.header').css('background', 'url("../img/slider.jpg") center / cover')
+	$('.header').css('background', 'url("img/slider.jpg") center / cover')
 
 	$('header').css('height', '244px');
 }
