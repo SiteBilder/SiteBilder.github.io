@@ -16,24 +16,22 @@ media3.addListener(headerHide);
 
 function headerHide() {
 	if (media3.matches) {
+		$('.header-up').prependTo('.header');
 		$(window).scroll(function() {
 			let scrolled = $(window).scrollTop();
-		 
 			if ( scrolled > 0 ) {
-
 				header.slideUp('slow', 'swing');
 				header2.slideUp('slow', 'swing');
 			} else {
-
 				header.slideDown('slow', 'swing');
 				header2.slideDown('slow', 'swing');
 			}
 		});
 	}
 	else {
+		$('.header-up').appendTo('.header-hide');
 		$(window).scroll(function() {
 			let scrolled = $(window).scrollTop();
-		 
 			if ( scrolled > 0 ) {
 				header2.slideUp('slow', 'swing');
 			} else {
