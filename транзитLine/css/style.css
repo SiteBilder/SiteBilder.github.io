@@ -121,7 +121,8 @@ body {
   height: 16px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 0px 5px 0px 0px; }
+  margin: 0px 5px 0px 0px;
+  cursor: pointer; }
 
 /* Активная точка */
 .sale-slider .slick-dots li.slick-active {
@@ -208,11 +209,13 @@ body {
     background-color: #ffaf00;
     border-radius: 5px; }
 
-@media (max-height: 530px) {
-  .first__box {
-    justify-content: center; }
-  .first__left {
-    display: none; } }
+@media (max-height: 700px) {
+  .first {
+    top: 35%; }
+    .first__box {
+      justify-content: center; }
+    .first__left {
+      display: none; } }
 
 @media (max-width: 1222px) {
   .first {
@@ -982,6 +985,9 @@ body {
   width: 100%; }
 
 .header-up {
+  display: none; }
+
+.header-hide {
   display: none; }
 
 .header-top {
