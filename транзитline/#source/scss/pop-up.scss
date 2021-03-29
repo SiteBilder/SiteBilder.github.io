@@ -1,0 +1,292 @@
+.popUp-call {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(13, 13, 13, 0.7);
+	display: none;
+	&__box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding: 40px 0px 50px 0px;
+		background: rgba(196, 193, 191, 0.7);
+		max-width: 555px;
+		border: 3px solid #ffaf00;
+	}
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+	&__title {
+		p {
+			color: #444444;
+			&:nth-child(1) {
+				font-size: 28px;
+				font-weight: 500;
+				margin: 0 0 5px 0;
+			}
+			&:nth-child(2) {
+				font-size: 18px;
+				font-weight: 300;
+				letter-spacing: -0.45px;
+			}
+		}
+	}
+	&__form {
+		margin: 35px 0 50px 0;
+		>input {
+			width: 360px;
+			height: 39px;
+			border-bottom: 1px solid #444;
+			margin: 0 0 15px 0;
+			padding: 0 0 0 10px;
+			&::placeholder {
+				font-style: italic;
+			}
+		}
+		p {
+			color: #444444;
+			font-size: 13px;
+			font-weight: 300;
+			@include flexbox();
+			align-items: center;
+			justify-content: center;
+			input {
+				width: 15px;
+				height: 15px;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+	&__bttn {
+		span {
+			color: #000000;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 10px 40px;
+			background-color: #ffaf00;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}
+
+.popUp-buy {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(13, 13, 13, 0.7);
+	display: none;
+	&__box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding: 40px 0px 50px 0px;
+		background: rgba(196, 193, 191, 0.7);
+		max-width: 555px;
+		border: 3px solid #ffaf00;
+	}
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+	&__title {
+		p {
+			color: #444444;
+			&:nth-child(1) {
+				font-size: 28px;
+				font-weight: 500;
+				margin: 0 0 5px 0;
+			}
+			&:nth-child(2) {
+				font-size: 18px;
+				font-weight: 300;
+				letter-spacing: -0.45px;
+			}
+		}
+	}
+	&__form {
+		margin: 35px 0 50px 0;
+		>input {
+			width: 360px;
+			height: 39px;
+			border-bottom: 1px solid #444;
+			margin: 0 0 15px 0;
+			padding: 0 0 0 10px;
+			&::placeholder {
+				font-style: italic;
+			}
+		}
+		p {
+			color: #444444;
+			font-size: 13px;
+			font-weight: 300;
+			@include flexbox();
+			align-items: center;
+			justify-content: center;
+			input {
+				width: 15px;
+				height: 15px;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+	&__bttn {
+		span {
+			color: #000000;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 10px 80px;
+			background-color: #ffaf00;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}
+
+@media(max-width:768px) {
+	.popUp-call {
+		&__box {
+			padding: 20px;
+		}
+		&__close {
+			right: 5px;
+			top: 5px;
+			img {
+				transform: scale(0.7);
+			}
+		}
+		&__title {
+			p {
+				&:first-child {
+					font-size: 20px;
+				}
+				&:nth-child(2) {
+					font-size: 15px;
+				}
+			}
+		}
+		&__form {
+			margin: 20px 0 30px 0px;
+			>input {
+				width: 220px;
+				height: 30px;
+			}
+		}
+		&__bttn {}
+	}
+	.popUp-buy {
+		&__box {
+			padding: 20px;
+		}
+		&__close {
+			right: 5px;
+			top: 5px;
+			img {
+				transform: scale(0.7);
+			}
+		}
+		&__title {
+			p {
+				&:first-child {
+					font-size: 20px;
+				}
+				&:nth-child(2) {
+					font-size: 15px;
+				}
+			}
+		}
+		&__form {
+			margin: 20px 0 30px 0px;
+			>input {
+				width: 220px;
+				height: 30px;
+			}
+		}
+		&__bttn {}
+	}
+}
+
+
+.popUp-out {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(13, 13, 13, 0.7);
+	display: none;
+	&__box {
+		@include flexbox();
+		align-items: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: rgba(196, 193, 191, 0.7);
+		border: 3px solid #ffaf00;
+		padding: 17px 45px 0px 45px;
+	}
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+	&__img {
+	}
+	&__inf {
+		margin: 0 0 0 25px;
+	}
+	&__title {
+		color: #444444;
+		font-size: 28px;
+		font-weight: 500;
+		margin: 0 0 7px 0;
+	}
+	&__txt {
+		color: #444444;
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: -0.45px;
+		max-width: 221px;
+	}
+}
+
+@media(max-width: 425px) {
+	.popUp-out {
+		&__box {
+			padding: 10px;
+		}
+		&__close {
+			right: 5px;
+			top: 5px;
+			img {
+				transform: scale(0.7);
+			}
+		}
+		&__img {
+			img {
+				transform: scale(0.8);
+			}
+		}
+		&__inf {
+			margin: 0;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__txt {
+			font-size: 15px;
+		}
+	}
+}
