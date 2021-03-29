@@ -121,7 +121,7 @@ body {
   .header__right {
     display: flex; }
     .header__right > div {
-      padding: calc(15px + 15 * ((100vw - 320px) / (1601 - 320)));
+      padding: calc(20px + 15 * ((100vw - 320px) / (1601 - 320)));
       border-left: 2px solid rgba(235, 235, 235, 0.05); }
   .header__share {
     position: relative;
@@ -130,6 +130,7 @@ body {
       transform: translate(0, 100%) scale(1);
       opacity: 1; }
     .header__share span {
+      line-height: 2em;
       color: #FFFFFF;
       font-size: calc(12px + 2 * ((100vw - 320px) / (1601 - 320)));
       font-weight: 700; }
@@ -201,20 +202,23 @@ body {
       .menu:hover {
         left: 0; } }
   .menu__item {
-    border-top: 2px solid #E7E7E7;
+/*     border-top: 2px solid #E7E7E7; */
     padding: 25px;
     position: relative;
     z-index: 10; }
     .menu__item:first-child {
-      border-top: none; }
+/*       border-top: none;  */
+    }
     .menu__item:last-child {
-      border-bottom: 2px solid #E7E7E7;
+/*       border-bottom: 2px solid #E7E7E7; */
       margin: 0 0 20px 0; }
     .menu__item:hover {
       background-color: #5692B1;
-      border-top: none; }
+/*       border-top: none;  */
+}
       .menu__item:hover + li {
-        border-top: none; }
+/*         border-top: none; */
+}
       .menu__item:hover img {
         filter: brightness(0) invert(1); }
       .menu__item:hover span {
@@ -222,7 +226,7 @@ body {
         opacity: 1; }
     .menu__item a span {
       position: absolute;
-      top: -2px;
+      top: 0;
       right: 5px;
       transform: translate(100%, 0) scale(0);
       height: 100%;
