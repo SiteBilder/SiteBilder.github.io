@@ -1,0 +1,41 @@
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.header {
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px 0 10px;
+	&__logo {
+		img {
+			
+		}
+		@media(max-width: 479.98px) {
+			transform: scale(0.7);
+		}
+	}
+	&__phone {
+	color: #ffffff;
+	letter-spacing: 0.5px;
+		a {
+			display: block;
+			color: #ffffff;
+			font-size: 20px;
+			margin: 10px 0 0 0;
+			text-align: right;
+			letter-spacing: 1px;
+			&:hover {
+				color: orange;
+			}
+		}
+		@media(max-width: 479.98px) {
+			font-size: 13px;
+			a {
+				font-size: 18px;
+			}
+		}
+	}
+}
