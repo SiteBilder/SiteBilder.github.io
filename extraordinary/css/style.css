@@ -201,7 +201,7 @@ body {
       .menu:hover {
         left: 0; } }
   .menu__item {
-/*     border-top: 2px solid #E7E7E7; */
+    border-top: 2px solid #E7E7E7;
     padding: 25px;
     position: relative;
     z-index: 10; }
@@ -222,7 +222,7 @@ body {
         opacity: 1; }
     .menu__item a span {
       position: absolute;
-      top: 0px;
+      top: -2px;
       right: 5px;
       transform: translate(100%, 0) scale(0);
       height: 100%;
