@@ -222,7 +222,7 @@ body {
         opacity: 1; }
     .menu__item a span {
       position: absolute;
-      top: 0;
+      top: 0px;
       right: 5px;
       transform: translate(100%, 0) scale(0);
       height: 100%;
