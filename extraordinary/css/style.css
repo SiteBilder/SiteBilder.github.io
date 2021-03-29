@@ -121,7 +121,7 @@ body {
   .header__right {
     display: flex; }
     .header__right > div {
-      padding: calc(20px + 15 * ((100vw - 320px) / (1601 - 320)));
+      padding: calc(20px + 10 * ((100vw - 320px) / (1601 - 320)));
       border-left: 2px solid rgba(235, 235, 235, 0.05); }
   .header__share {
     position: relative;
