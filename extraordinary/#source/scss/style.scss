@@ -179,6 +179,7 @@ body {
 			}
 		}
 		a {
+			img {}
 			span {
 				position: absolute;
 				top: 0;
@@ -250,7 +251,6 @@ body {
 	}
 	&__img {
 		position: relative;
-		min-height: 200px;
 		background: url('../img/icons/7plQ.gif') center / auto no-repeat;
 		&:hover {
 			.preview__read {
@@ -468,8 +468,10 @@ body {
 	&__img {
 		position: relative;
 		margin: calc(10px + 10 * ((100vw - 320px) / (1601 - 320))) 0;
+		background: url('../img/icons/7plQ.gif') center / auto no-repeat;
 		img {
 			max-width: 100%;
+			background-color: transparent;
 		}
 	}
 	&__img-txt {
