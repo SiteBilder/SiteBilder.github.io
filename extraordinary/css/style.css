@@ -217,8 +217,6 @@ body {
       .menu__item:hover span {
         transform: translate(100%, 0) scale(1);
         opacity: 1; }
-    .menu__item a img {
-      background-color: red; }
     .menu__item a span {
       position: absolute;
       top: 0;
@@ -277,7 +275,7 @@ body {
   .preview__img {
     position: relative;
     min-height: 200px;
-    background: url("../../img/icons/7plQ.gif") center/auto no-repeat; }
+    background: url("../img/icons/7plQ.gif") center/auto no-repeat; }
     .preview__img:hover .preview__read {
       visibility: visible;
       opacity: 1; }
