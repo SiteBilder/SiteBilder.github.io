@@ -274,7 +274,6 @@ body {
     border-bottom: calc(4px + 2 * ((100vw - 320px) / (1601 - 320))) solid #5692B1; }
   .preview__img {
     position: relative;
-    min-height: 200px;
     background: url("../img/icons/7plQ.gif") center/auto no-repeat; }
     .preview__img:hover .preview__read {
       visibility: visible;
@@ -447,9 +446,11 @@ body {
       margin-bottom: calc(10px + 10 * ((100vw - 320px) / (1601 - 320))); }
   .article__img {
     position: relative;
-    margin: calc(10px + 10 * ((100vw - 320px) / (1601 - 320))) 0; }
+    margin: calc(10px + 10 * ((100vw - 320px) / (1601 - 320))) 0;
+    background: url("../img/icons/7plQ.gif") center/auto no-repeat; }
     .article__img img {
-      max-width: 100%; }
+      max-width: 100%;
+      background-color: transparent; }
   .article__img-txt {
     position: absolute;
     left: 10px;
