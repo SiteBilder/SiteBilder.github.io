@@ -179,9 +179,6 @@ body {
 			}
 		}
 		a {
-			img {
-				background-color: red;
-			}
 			span {
 				position: absolute;
 				top: 0;
@@ -254,7 +251,7 @@ body {
 	&__img {
 		position: relative;
 		min-height: 200px;
-		background: url('../../img/icons/7plQ.gif') center / auto no-repeat;
+		background: url('../img/icons/7plQ.gif') center / auto no-repeat;
 		&:hover {
 			.preview__read {
 				visibility: visible;
@@ -503,7 +500,7 @@ body {
 		position: relative;
 		margin: 0 calc(55px + 35 * ((100vw - 320px) / (1601 - 320))) 0 30px;
 		padding: 0 0 3% 0;
-		background: url('../../img/icons/7plQ.gif') center / auto no-repeat;
+		background: url('../img/icons/7plQ.gif') center / auto no-repeat;
 		@media (min-width: 1600px) {
 			padding: 0;
 			height: 560px;
